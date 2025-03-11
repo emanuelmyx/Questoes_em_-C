@@ -1,5 +1,5 @@
 # Questoes_em_-C
-Resolução da revisão de algoritmos e lógica de programação, utilizando linguagem C.
+<h1>Resolução da revisão de algoritmos e lógica de programação, utilizando linguagem C.</h1>
 
 1) Descreva as etapas da compilação.
    
