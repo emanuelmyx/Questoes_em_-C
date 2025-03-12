@@ -28,3 +28,84 @@ Assim você conseguirá compilar seu código e alterar o nome do arquivo execut�
 
 <h3>3) Quais s ̃ao os dois tipos de coment ́arios que podem ser escritos nos programas C?</h3>
    <p>Comentário de uma linha que começa com "//", depois disso tudo em sequência é ignorado pelo compilador. E o outro, é comentário de múltiplas linhas que começam com "/*" e terminam com "*/"</p>
+
+   <h3>18) Identifique e corrija os erros em cada uma das seguintes instruções:</h3>
+   
+   <b> a) printf("O valor  ́e %d", &numero); </b>
+   <p> -printf("O valor  ́e %d", numero); </p>
+
+   <b> b) scanf("%d%d", &numero1, numero2); </b>
+   <p> -scanf("%d%d", &numero1, &numero2); </p>
+
+   <b> c) printf("A soma  ́e %d \n,"x+y); </b>
+   <p> -printf("A soma  ́e %d \n", x+y); </p> 
+   
+   <b> d) scanf("d", valor); </b>
+   <p> -scanf("d", &valor); </p>
+   
+<h3>19) Que valores serão impressos pelo o programa a seguir?</h3>
+
+#include <stdio.h>
+  int main (void) {
+  
+  int a = 4;
+  
+  double b = 5.7;
+  
+  int c, d;
+  
+
+printf("%d %f\n", a, b);
+c = 3;
+d = a + 2;
+
+printf("%d %d\n", c, d);
+a = 2;
+b = c + d;
+
+printf("%d %f\n", a, b);
+
+printf("%d %d\n", c, d);
+
+return 0;
+}
+
+
+<p> -Os valores que serão exibidos: 
+<b>4 5.700000
+3 6       
+2 9.000000
+3 6</b>.  </p>
+
+<h3>20) O que será impresso pelo o programa a seguir, se o usuário digitar o número 6? E o número -6?</h3>
+
+#include <stdio.h>
+  
+  int main (void){
+  
+  int num;
+
+printf("Digite um numero: ");
+
+scanf("%d", &num);
+
+if (num > 0) {
+printf ("num. positivo\n");
+
+}
+
+if (num >= 10){
+printf ("num. maior ou igual a 10\n");
+
+} 
+
+else {
+printf ("num. menor que 10\n");
+
+}
+
+return 0;
+
+}
+
+<p> -Se o usuário digitar o número "6" o resultado vai ser: <b>num. positivo e num. menor que 10</b>. Agora, se for digitado "-6" aparecerá: <b>num. menor que 10</b>.</p>
