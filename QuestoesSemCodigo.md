@@ -26,8 +26,8 @@ Assim você conseguirá compilar seu código e alterar o nome do arquivo execut�
    <b> d) gcc progA.c progB.o </b>
    <p>-Compila progA.c e linka com progB.o, gerando a.exe.</p>
 
-<h3>3) Quais s ̃ao os dois tipos de coment ́arios que podem ser escritos nos programas C?</h3>
-   <p>Comentário de uma linha que começa com "//", depois disso tudo em sequência é ignorado pelo compilador. E o outro, é comentário de múltiplas linhas que começam com "/*" e terminam com "*/"</p>
+<h3>3) Quais são os dois tipos de coment ́arios que podem ser escritos nos programas C?</h3>
+   <p>Comentário de uma linha que começa com "//", depois disso tudo em sequência é ignorado pelo compilador. E o outro, é o comentário de múltiplas linhas que começam com "/*" e terminam com "*/"</p>
 
    <h3>18) Identifique e corrija os erros em cada uma das seguintes instruções:</h3>
    
