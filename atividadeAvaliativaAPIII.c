@@ -48,7 +48,7 @@ int main()
             printf("Saindo do sistema...\n");
             break;
         default:
-            printf("Opção inválida! Tente novamente.\n");
+            printf("OpÃ§Ã£o invÃ¡lida! Tente novamente.\n");
         }
         printf("\nPressione Enter para continuar...");
         getchar();
@@ -69,7 +69,7 @@ void exibirMenu()
     printf("3 - Buscar cliente\n");
     printf("0 - Sair\n");
     printf("==================================\n");
-    printf("Escolha uma opção: ");
+    printf("Escolha uma opÃ§Ã£o: ");
 }
 
 void adicionarCliente()
@@ -89,7 +89,7 @@ void adicionarCliente()
         scanf("%d", &clientes[totalClientes].idade);
         getchar();
 
-        printf("Código: ");
+        printf("CÃ³digo: ");
         scanf("%d", &clientes[totalClientes].codigo);
         getchar(); 
 
@@ -98,7 +98,7 @@ void adicionarCliente()
     }
     else
     {
-        printf("\nLimite máximo de clientes atingido (%d)!\n", MAX_CLIENTES);
+        printf("\nLimite mÃ¡ximo de clientes atingido (%d)!\n", MAX_CLIENTES);
     }
 }
 
@@ -117,7 +117,7 @@ void listarClientes()
         printf("\nNome: %s", clientes[i].nome);
         printf("Email: %s", clientes[i].email);
         printf("Idade: %d", clientes[i].idade);
-        printf("Código: %d", clientes[i].codigo);
+        printf("CÃ³digo: %d", clientes[i].codigo);
     }
 }
 
@@ -131,7 +131,7 @@ void buscarCliente()
     }
 
     int codigoBusca;
-    printf("Digite o código do cliente que deseja buscar: ");
+    printf("Digite o cÃ³digo do cliente que deseja buscar: ");
     scanf("%d", &codigoBusca);
     getchar(); 
 
@@ -144,7 +144,7 @@ void buscarCliente()
             printf("\nNome: %s", clientes[i].nome);
             printf("Email: %s", clientes[i].email);
             printf("Idade: %d", clientes[i].idade);
-            printf("\nCódigo: %d", clientes[i].codigo);
+            printf("\nCÃ³digo: %d", clientes[i].codigo);
             encontrado = 1;
             break; 
         }
@@ -152,6 +152,6 @@ void buscarCliente()
 
     if (!encontrado)
     {
-        printf("\nCliente com código %d não encontrado.\n", codigoBusca);
+        printf("\nCliente com cÃ³digo %d nÃ£o encontrado.\n", codigoBusca);
     }
 }
